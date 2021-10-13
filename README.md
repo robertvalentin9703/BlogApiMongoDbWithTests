@@ -1,4 +1,5 @@
-https://blog-api-with-mongo-db.herokuapp.com/articles - default url
+https://blog-api-mongo-db-with-tests.herokuapp.com/articles - default url
+
 
 
 GET                 -> for all articles             + you can add param for author, tag, title, content, date\
