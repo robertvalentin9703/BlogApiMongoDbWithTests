@@ -7,7 +7,7 @@ POST /save          -> adds new article
 PUT /{id}/update    -> update article with that id
 DELETE /{id}/delete -> deletes article with that id
 
-Filters:
+Filters: \n
 /searchArticleByTitle
 /searchArticleByAuthor
 /searchArticleByTag
