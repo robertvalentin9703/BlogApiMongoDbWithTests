@@ -12,8 +12,8 @@
     <artifactId>articlesApiIntegrationTests</artifactId>
 
     <properties>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <rest-assured.version>4.3.1</rest-assured.version>
         <junit.version>4.13.1</junit.version>
         <maven-surefire-report-plugin.version>3.0.0-M5</maven-surefire-report-plugin.version>
