@@ -3,7 +3,6 @@ package eu.crystal.BlogApiMongoDB.model;
 import java.sql.Timestamp;
 
 import javax.persistence.Id;
-
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "articles")
