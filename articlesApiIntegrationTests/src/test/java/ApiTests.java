@@ -9,11 +9,19 @@ import static io.restassured.RestAssured.given;
 public class ApiTests {
 
     @Test
-    public void getAllArticlesRequest(){
+    public void getAllArticles(){
         given().baseUri("https://blog-api-with-mongo-db.herokuapp.com/articles")
                 .contentType(ContentType.JSON)
                 .when().get("")
                 .then().statusCode(HttpStatus.SC_OK);
+    }
+
+    @Test
+    public void getAllArticlesWithBadUri(){
+        given().baseUri("https://wrong-url.com/articles")
+                .contentType(ContentType.JSON)
+                .when().get("")
+                .then().statusCode(HttpStatus.SC_NOT_FOUND);
     }
 
     @Test
