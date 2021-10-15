@@ -10,7 +10,7 @@ public class ApiTests {
 
     @Test
     public void getAllArticles(){
-        given().baseUri("https://blog-api-with-mongo-db.herokuapp.com/articles")
+        given().baseUri("https://blog-api-mongo-db-with-tests.herokuapp.com/articles")
                 .contentType(ContentType.JSON)
                 .when().get("")
                 .then().statusCode(HttpStatus.SC_OK);
