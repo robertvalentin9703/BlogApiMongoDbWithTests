@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -9,32 +10,32 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<packaging>jar</packaging>
+<!--	<packaging>jar</packaging>-->
 	<groupId>eu.crystal</groupId>
 	<artifactId>BlogApiMongoDB</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>BlogApiMongoDB</name>
 	<description>Demo project for Spring Boot</description>
 
-	<!-- include below build tag to your existing pom.xml  -->
-	<build>
-		<plugins>
-			<plugin>
-				<!-- Building an executable jar -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.2.0</version>
-				<configuration>
-					<archive>
-						<manifest>
-							<!-- give full qualified name of your main class-->
-							<mainClass>eu/crystal/BlogApiMongoDB/BlogApiMongoDbApplication</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+<!--	&lt;!&ndash; include below build tag to your existing pom.xml  &ndash;&gt;-->
+<!--	<build>-->
+<!--		<plugins>-->
+<!--			<plugin>-->
+<!--				&lt;!&ndash; Building an executable jar &ndash;&gt;-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-jar-plugin</artifactId>-->
+<!--				<version>3.2.0</version>-->
+<!--				<configuration>-->
+<!--					<archive>-->
+<!--						<manifest>-->
+<!--							&lt;!&ndash; give full qualified name of your main class&ndash;&gt;-->
+<!--							<mainClass>eu/crystal/BlogApiMongoDB/BlogApiMongoDbApplication</mainClass>-->
+<!--						</manifest>-->
+<!--					</archive>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
+<!--		</plugins>-->
+<!--	</build>-->
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -67,14 +68,5 @@
 			<version>2.2</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>
