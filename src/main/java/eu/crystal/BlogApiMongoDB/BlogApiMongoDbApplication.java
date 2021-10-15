@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BlogApiMongoDbApplication {
+public class BlogApiMongoDBApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BlogApiMongoDbApplication.class, args);
+		SpringApplication.run(BlogApiMongoDBApplication.class, args);
 	}
 
 }

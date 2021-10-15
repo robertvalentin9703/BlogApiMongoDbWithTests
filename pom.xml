@@ -8,14 +8,37 @@
 		<version>2.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>eu.crystal</groupId>
 	<artifactId>BlogApiMongoDB</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>BlogApiMongoDB</name>
 	<description>Demo project for Spring Boot</description>
+
+	<!-- include below build tag to your existing pom.xml  -->
+	<build>
+		<plugins>
+			<plugin>
+				<!-- Building an executable jar -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<!-- give full qualified name of your main class-->
+							<mainClass>com.crystal.BlogApiMongoDB</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
