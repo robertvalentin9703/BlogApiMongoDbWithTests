@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-<!--	<packaging>jar</packaging>-->
+	<packaging>jar</packaging>
 	<groupId>eu.crystal</groupId>
 	<artifactId>BlogApiMongoDB</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
